@@ -222,9 +222,9 @@ def main():
    
     ssock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
    
-    ssock.bind(("127.0.0.1", 23))
+    ssock.bind(("0.0.0.0", 23))
     ssock.listen(5)
-    logger.log("Listerer started")
+    logger.log("Listener started")
    
     while True:
         csock, address = ssock.accept()
