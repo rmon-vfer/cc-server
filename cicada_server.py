@@ -185,7 +185,8 @@ class Server(threading.Thread):
         elif cmd == "goodbye": # j
             self.logsend("99 GOODBYE")
             return False
-           
+        elif cmd == "gordu":
+            self.logsend("3121 QUE TE FOLLEN GORDU")
         else:
             self.logsend("02 No such command")
             return True
