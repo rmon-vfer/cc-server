@@ -1,3 +1,6 @@
+# Ramón Vila Ferreres - 2016
+# Under MIT License
+
 import sys, socket, threading, time, traceback, random, os
  
 class Logger:
